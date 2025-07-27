@@ -1,24 +1,19 @@
-# py
 import json
 import base64
 import requests
 import time
 
-from configparser import ConfigParser
-import time
-
-config = ConfigParser()
-config.read('config.ini')
-
-CLIENT_ID = config.get('SPOTIFY', 'CLIENT_ID')
-CLIENT_SECRET = config.get('SPOTIFY', 'CLIENT_SECRET')
-REDIRECT_URI = config.get('SPOTIFY', 'REDIRECT_URI')
 CONFIG_FILE = 'config.json'
 AUTH_FILE = 'auth.json'
-
 def load_config():
     with open(CONFIG_FILE, 'r') as f:
         return json.load(f)
+
+# Load configuration from config.json
+config = load_config()
+CLIENT_ID = config['client_id']
+CLIENT_SECRET = config['client_secret']
+REDIRECT_URI = config['redirect_uri']
 
 def load_auth():
     with open(AUTH_FILE, 'r') as f:
