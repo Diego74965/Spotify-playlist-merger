@@ -19,7 +19,7 @@ Easily merge multiple Spotify playlists into a single playlist on your account, 
 1. **Clone the repository:**
    ```sh
    git clone <repo-url>
-   cd Spotify
+   cd Spotify-playlist-merger
    ```
 
 2. **Create and activate a virtual environment:**
