@@ -1,0 +1,17 @@
+{
+    "client_id": "your_client_id_here",
+    "client_secret": "your_client_secret_here",
+    "playlist_name": "Merged Playlist",
+    "playlist_description": "A playlist containing all the songs from the specified playlists. If add_last_update_to_description is true, the last update date will be appended.",
+    "add_last_update_to_description": true,
+    "playlist_urls": [
+        "playlist_1_url_here",
+        "playlist_2_url_here",
+        "..."
+    ],
+    "image_path": "path_to_your_image_here",
+    "scope": "playlist-modify-public playlist-read-private",
+    "auth_url": "https://accounts.spotify.com/authorize",
+    "token_url": "https://accounts.spotify.com/api/token",
+    "redirect_uri": "http://127.0.0.1:8888/callback"
+}
